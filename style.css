@@ -1,0 +1,375 @@
+@font-face {
+    font-family: 'Eksell Display';
+    src: url('./fonts/ekselldisplaytrial-large.otf');
+    font-size: large;
+}
+
+@font-face {
+    font-family: 'Eksell Display';
+    src: url('./fonts/ekselldisplaytrial-medium.otf');
+    font-size: medium;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Eksell Display' serif;
+    background: #F8F8F8;
+    backdrop-filter: blur(30px);
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-link {
+    color: #002248;
+    font-family: Airbnb Cereal App;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.nav-link:hover {
+    color: #3685FB;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-btn {
+    width: 120px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    color: #3685FB;
+    border: 2px solid #3685FB;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.nav-btn:hover {
+    background: #3685FB;
+    color: #FFF;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* ===================   Navbar End   =================  */
+
+
+.hero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-right {
+    width: 513px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-title {
+    color: #002248;
+    font-family: 'Eksell Display';
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: 72px;
+    /* 120% */
+    text-transform: capitalize;
+}
+
+.hero-text {
+    color: #697687;
+    /* Paragraph */
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px
+}
+
+
+.select {
+    background: #FFF;
+    width: 880px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selects {
+    width: 245px;
+    padding: 30px;
+}
+
+.book-now {
+
+    background: #3685FB;
+    padding: 30px;
+    border-radius: 0 30px 30px 0;
+}
+
+/* =======================  Main ===================== */
+
+.travel-header {
+    width: 560px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    text-align: center;
+    padding: 40px;
+    width: 370px;
+    height: 395px;
+    flex-shrink: 0;
+    width: 370px;
+    height: 395px;
+    flex-shrink: 0;
+}
+
+
+.locs-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.locs-header {
+    width: 600px;
+}
+
+
+.loc-card {
+    padding-top: 360px;
+    border-radius: 12px;
+    background-image: url('./images/card-bg1.png');
+    width: 370px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.loc-card:nth-child(2) {
+    background-image: url('./images/card-bg-2.png');
+}
+
+.loc-card:nth-child(3) {
+    background-image: url('./images/card-bg-3.png');
+}
+
+
+.card-content {
+    color: #FFF;
+    width: 320px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 1px solid #989898;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+
+
+.maps {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 900px;
+    background-image: url('./images/background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.map-img {
+    width: 1000px;
+    height: 900px;
+    object-fit: cover;
+    object-position: left;
+}
+
+.map-content {
+    width: 460px;
+    position: absolute;
+    top: 30%;
+    right: 7%;
+}
+
+.compas {
+    position: absolute;
+    top: 90%;
+    right: 40%;
+}
+
+.for-family {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.family-card-wrapper {
+    width: 355px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 30px; */
+}
+
+.family-card {
+    width: 150px;
+    height: 130px;
+    flex-shrink: 0;
+}
+
+.about-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.media-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.media-header{
+    width: 500px;
+}
+
+.foto-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto{
+    width: 345px;
+    height: 430px;
+    object-fit: cover;
+}
+
+
+.foto:nth-child(1){
+    width: 120px;
+    border-radius: 0 570px 570px 0;
+}
+.foto:nth-child(2){
+    border-radius: 10px;
+}
+.foto:nth-child(3){
+    border-radius:550px;
+}
+.foto:nth-child(4){
+    border-radius: 10px;
+}
+.foto:nth-child(5){
+    width: 120px;
+    border-radius:570px 0 0 570px;
+}
+
+
+/*  ============ media query =========== */
+
+@media only screen and (max-width:400px){
+
+    .container{
+
+        width: 400px;
+        padding: 10px;
+
+    }
+
+    .nav{
+        width: 380px;
+        justify-content: space-between;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column;
+        width: 380px;
+    }
+
+    .hero-img{
+        width: 380px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .hero-right {
+        width: 380px;
+    }
+
+    .select {
+        background: #FFF;
+        width: 380px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .travel-header {
+        width: 380px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .card-wrapper {
+        flex-direction: column;
+    }
+
+    .locs-wrapper{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .locs-header {
+        width: 380px;
+    }
+
+
+
+    
+}
